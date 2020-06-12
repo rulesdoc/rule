@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html style="font-size:18px;">
+<head>
+<title>开发规范</title>
+<meta charset="UTF-8">
+<style type="text/css">
+	tr > *:first-child{width:2rem;text-align:center;}
+	tr > *:nth-child(2){width:28rem;}
+	tr > th{text-align:center;}
+	tr > td:nth-child(2){text-align:left;}
+	tr > td:last-child{text-align:left;}
+	tr > td{padding:0.2rem 0.15rem 0.2rem 0.2rem;}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<head>
+<body>
+<section id="body" style="border:none;">
+<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;">为了便于大家协同开发特制定此规范，仅仅是建议，各位如有不同意见的都请说出来大家群里讨论</header>
+<table style="left:0px;width:100%;" cellspacing="0px" cellpadding="0px" rules="all" border="1">
+	<thead><tr><th>序号</th><th>说明</th><th>示例</th></tr></thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>native对像直接挂载在window上可直接访问以调用app原生能力。但所有调用都要做判断当native对像不存在就不要调不然报错，说明此时是运行在纯浏览器环境。也不要自己构造此对象。应由app框架提供。苹果和安卓调用方法都有多种，具体实现可能不同。所以建议都统一封装到一个方法里要改也只改一处</td>
+			<td>window.native.loginWithWeChat(wxNumber);</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>网页开发采用前后端分离方式。所有cgi都不可用如jsp,PHP,etc</td>
+			<td>&lt;span&gt;${userName}&lt;/span&gt;类似代码不可用</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>所有文件以UTF-8无BOM格式编码保存，换行符都用Unix(LF)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>使用HTML5开发，head都要加&lt;meta charset=&quot;UTF-8&quot;&gt;，通过link引用的CSS首行都要加@charset&nbsp;&quot;UTF-8&quot;;</td>
+			<td>@charset&nbsp;&quot;UTF-8&quot;;<br>body {<br>&nbsp;background-color:white;<br>}</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+</section>
+</body>
+</html>
