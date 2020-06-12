@@ -5,6 +5,7 @@ body *{font-size:0.85rem;}
 #body{
 	display:block;
 	margin:0px auto;
+	padding:1.3rem 0px;
 	width:48rem;
 	background-color:white;
 	position:relative;
