@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html style="font-size:18px;">
+<head>
+<title>推筒子28</title>
+<meta charset="UTF-8">
+<style type="text/css">
+	tr > *:first-child{width:7rem;}
+	tr > th{text-align:center;}
+	tr > td{text-align:left;}
+	tr > td{padding:0.2rem 0.15rem 0.2rem 0.2rem;}
+	#innerpx tr > *:first-child{width:4rem;}
+	#inneryz tr > *:first-child{width:5rem;}
+	#inneryz tr > *:nth-child(3){width:18rem;}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<head>
+<body>
+<section id="body" style="border:none;">
+<header style="margin-bottom:0.9rem;margin-top:1.3rem;text-align:center;font-size:1rem;font-weight:bold;">推筒子28游戏介绍</header>
+<table id="outer" style="width:100%;margin-bottom:2.5rem;" cellspacing="0px" cellpadding="0px" rules="all" border="1">
+	<thead><tr><th>简述</th><th>详细说明</th></tr></thead>
+	<tbody>
+		<tr>
+			<td>1、概述</td>
+			<td>人数随意，至少2个玩家，最多20个玩家，随玩随走。用一副麻将中的所有筒子和4个東共40张牌。所有玩家一人为庄其余为闲，庄家和所有闲家逐一比大小定，闲家之间不比大小。每个玩家固定发两张牌。所有玩家的牌都公开其它玩家都能看到。发牌完成已经决定了输赢，结账后就开始下一局</td>
+		</tr>
+		<tr>
+			<td>3、牌型<br>从大到小从上到下</td>
+			<td style="padding:0px;"><table id="innerpx" style="left:0px;width:100%;" cellspacing="0px" cellpadding="0px" rules="all" border="0"><tbody>
+			<tr>
+				<td>1、豹子<br>从大到小从上到下</td>
+				<td style="padding:0px;"><table id="innerpx" style="left:0px;width:100%;" cellspacing="0px" cellpadding="0px" rules="all" border="0"><tbody>
+				<tr>
+					<td>1、</td>
+					<td style="padding:0px;">飞机之间大小按其牌点确定</td>
+				</tr>
+				<tr>
+					<td>2、</td>
+					<td style="padding:0px;">同花顺之间大小按顺子大小规则确定</td>
+				</tr>
+				</tbody></table></td>
+			</tr>
+			<tr>
+			<td>2、点子<br>从大到小从上到下</td>
+			<td style="padding:0px;">既是清一色又是顺子就是同花顺。同花顺之间大小按顺子大小规则确定</td>
+			</tr>
+			</tbody></table></td>
+		</tr>
+		<tr>
+			<td>4、明暗注比率</td>
+			<td>明注与相匹配暗注的比值。用R表示</td>
+		</tr>
+		<tr>
+			<td>5、封顶明注</td>
+			<td>跟注、跟注加注、跟注开牌这几种方式下注的上限。封顶明注=R&times;封顶暗注</td>
+		</tr>
+		<tr>
+			<td>6、封顶暗注</td>
+			<td>暗注、暗注加注、暗注开牌这几种方式下注的上限。封顶暗注是底注的整数倍</td>
+		</tr>
+		<tr>
+			<td>7、封顶注</td>
+			<td>封顶明注和封顶暗注统称封顶注</td>
+		</tr>
+		<tr>
+			<td>8、叫庄</td>
+			<td>初局才叫庄以确定庄家。由系统随机叫庄，叫到谁谁当庄不能让庄</td>
+		</tr>
+		<tr>
+			<td>9、发牌</td>
+			<td>由系统将52张牌从庄家的下家开始逆时针方向向各玩家依次发三张牌，发完一轮即完成发牌。发牌过程中所有玩家不允许看牌。发牌完毕后，以与发牌相同的顺序无限循环由各玩家依次选择押注方式进行押注，直到最后剩余一个玩家或有玩家开牌终止一局</td>
+		</tr>
+		<tr>
+			<td>10、上家下家</td>
+			<td>上家下家是相对概念且是动态变化的，是指相邻的两个玩家的关系。若玩家A是玩家B的上家则玩家B必然是玩家A的下家，反之亦然。除了发牌及由发牌确定的押注起始顺序外其它所有活动都是按先上家再下家的顺序进行。若上家弃牌且继续押注的玩家不止一位则上家的上家成为上家，原上家与本局无关，依此递推。若下家弃牌且继续押注的玩家不止一位则下家的下家成为下家，原下家与本局无关，依此递推</td>
+		</tr>
+		<tr>
+			<td>11、押注</td>
+			<td>押注即玩家把博输赢的标的作为筹码下注。一旦押注不可取回。所有押注都将输给赢家，自己成为赢家才不输</td>
+		</tr>
+		<tr>
+			<td>12、手数</td>
+			<td>每押注一次称为一手。押注的次数就是手数</td>
+		</tr>
+		<tr>
+			<td>13、押注方式</td>
+			<td style="padding:0px;"></td>
+		</tr>
+		<tr>
+			<td>14、赢家</td>
+			<td>每局只会有一个赢家其他玩家都是输家。所有玩家的所有押注都是输给赢家。赢家是下一局的庄家。若玩家弃牌后只剩余一位玩家则停止押注，剩余的玩家就是本局的赢家。开牌规则是确定赢家的另一种方式</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+</body>
+</html>
