@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html style="font-size:18px;">
+<head>
+<title>android测试专用</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<style type="text/css">
+	tr > *:first-child{width:2rem;text-align:center;}
+	tr > *:nth-child(2){width:28rem;}
+	tr > th{text-align:center;}
+	tr > td:nth-child(2){text-align:left;}
+	tr > td:last-child{text-align:left;}
+	tr > td{padding:0.2rem 0.15rem 0.2rem 0.2rem;}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<script type="text/javascript">
+	window.dosomething=function(){
+		alert('ok');
+		if(window.native){
+			native.geHome();
+		}
+	};
+</script>
+<head>
+<body>
+<section id="body" style="border:none;">
+<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;" onclick="dosomething()">点我试试</header>
+</section>
+</body>
+</html>
