@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html style="font-size:18px;">
+<head>
+<title>原生方法</title>
+<meta charset="UTF-8">
+<style type="text/css">
+	tr > *:first-child{width:15rem;text-align:left;}
+	tr > *:nth-child(2){width:3rem;text-align:center;}
+	tr > th{text-align:center;}
+	tr > *{padding:0.2rem 0.15rem 0.2rem 0.2rem;}
+</style>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<head>
+<body>
+<section id="body" style="border:none;">
+<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;">所有方法都在native对象上可用</header>
+<table style="left:0px;width:100%;" cellspacing="0px" cellpadding="0px" rules="all" border="1">
+	<thead><tr><th>方法签名</th><th>返回值</th><th>说明</th></tr></thead>
+	<tbody>
+		<tr>
+			<td>goLogin()</td>
+			<td>void</td>
+			<td>返回到登录页，退出或切换用户</td>
+		</tr>
+		<tr>
+			<td>goHome()</td>
+			<td>void</td>
+			<td>返回到主页</td>
+		</tr>
+		<tr>
+			<td>goBack()</td>
+			<td>void</td>
+			<td>返回到上级页面</td>
+		</tr>
+		<tr>
+			<td>newPage(boolean vertical)</td>
+			<td>void</td>
+			<td>打开新页面,vertical===true竖屏展示,false横屏</td>
+		</tr>
+		<tr>
+			<td>corsHTTP(String URL,String func)</td>
+			<td>void</td>
+			<td>跨域请求,func是回调函数名</td>
+		</tr>
+		<tr>
+			<td>encrypt(String origin)</td>
+			<td>String</td>
+			<td>加密,返回加密后的字符串</td>
+		</tr>
+		<tr>
+			<td>setSpeech(boolean enable)</td>
+			<td>void</td>
+			<td>设置实时语音,enable===true开启,false关闭</td>
+		</tr>
+		<tr>
+			<td>getSpeech()</td>
+			<td>boolean</td>
+			<td>返回当前实时语音启用返回true,否则返回false</td>
+		</tr>
+		<tr>
+			<td>doPay()</td>
+			<td>String</td>
+			<td>调起在线支付,需要支持微信支付,支付宝支付,返回支付结果</td>
+		</tr>
+		<tr>
+			<td>doShare(String payload)</td>
+			<td>void</td>
+			<td>调起分享,需要支持微信朋友圈,微信好友/群,QQ空间,QQ好友群</td>
+		</tr>
+		<tr>
+			<td>doDial(String callNumber)</td>
+			<td>void</td>
+			<td>拨打电话</td>
+		</tr>
+		<tr>
+			<td>openApp(boolean bundleId)</td>
+			<td>void</td>
+			<td>打开其它应用</td>
+		</tr>
+		<tr>
+			<td>renewApp()</td>
+			<td>void</td>
+			<td>更新游戏到最新版本</td>
+		</tr>
+		<tr>
+			<td>getNetstate()</td>
+			<td>String</td>
+			<td>返回当前网络状态</td>
+		</tr>
+		<tr>
+			<td>getLocation()</td>
+			<td>String</td>
+			<td>返回当前地理位置</td>
+		</tr>
+		<tr>
+			<td>getDeviceID()</td>
+			<td>String</td>
+			<td>返回当前设备唯一标识</td>
+		</tr>
+		<tr>
+			<td>setData(String key,String val)</td>
+			<td>void</td>
+			<td>持久化存储数据</td>
+		</tr>
+		<tr>
+			<td>getData(String key)</td>
+			<td>String</td>
+			<td>获取存储的数据</td>
+		</tr>
+		<tr>
+			<td>delData(String key)</td>
+			<td>void</td>
+			<td>删除存储的数据</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+</body>
+</html>
