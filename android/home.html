@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html style="font-size:18px;">
 <head>
-<title>android测试专用</title>
+<title>用户主页</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <style type="text/css">
 </style>
 <script type="text/javascript">
 	window.dosomething=function(){
-		alert('ok');
 		if(window.native){
-			native.geHome();
+			native.newPage("https://www.baidu.com/",false);
 		}
 	};
 </script>
-<head>
+</head>
 <body>
 <section id="body" style="border:none;">
-<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;" onclick="dosomething()">点我试试</header>
+<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;" onclick="dosomething()">打开百度</header>
 </section>
 </body>
 </html>
