@@ -1,0 +1,47 @@
+body{
+	background: "#4b4843";
+	color: #666;
+}
+
+.chess{
+    width: 700px;
+	height: 700px;
+	margin: 50px auto;
+	border-right: none;
+	border-bottom: none;
+	position: relative;
+	border: 2px solid black;
+	box-shadow: -10px 10px 15px black;
+	background:#8d6b45;
+	
+}
+.chess .block{
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	border-radius: 50%;
+	position: relative;
+	z-index: 8884;
+}
+.chess .row,.chess .col{
+	background: #4d392b;
+	position:absolute;
+}
+.chess .row{
+	width: 100%;
+	height: 1px;
+	left:0;
+}
+.chess .col{
+	width: 1px;
+	height: 100%;
+	top:0;
+}
+.white{
+	background:#ffffff;
+
+
+}
+.black{
+	background: #2c1d1b;
+}

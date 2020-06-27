@@ -5,6 +5,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <style type="text/css">
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	background: url(./img/login_bg.jpg) no-repeat; 
+	background-size:100% 100%;
+}
+/*.wzqcss,.zgxqcss{
+	margin:20px;
+}
+.gameCss img{
+	width:100px;
+	height:100px;
+}
+.wzqcss,span{
+	margin-left:50px;
+	color:#fff;
+}*/
+.gametable{
+	position:absolute;
+	left: calc((100% - 260px)/2);
+}
+.gametable img{
+	width:100px;
+	height:100px;
+}
+.gametable td{
+	width:125px;
+	text-align: center;
+}
+
 </style>
 <script type="text/javascript">
 	window.dosomething=function(){
@@ -12,11 +44,39 @@
 			native.newPage("https://www.baidu.com/",false);
 		}
 	};
+	function wuziqi(){
+		window.location.href="../wuziqi/HTML/login.html";
+	}
+	function zgxq(){
+		window.location.href="../xiangqi/index.html";
+	}
 </script>
 </head>
 <body>
 <section id="body" style="border:none;">
-<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;" onclick="dosomething()">打开百度</header>
+<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;color:#fff" onclick="dosomething()">欢迎来到欢乐谷</header>
+<div class="gameCss">
+	<!--<div class="wzqcss" onClick="wuziqi()">
+		<img class="wzqimg" src="./img/wzq.png"><br>
+		<span>五子棋</span>
+	</div>
+	<div class="zgxqcss" onClick="zgxq()">
+		<img class="zgxqimg" src="./img/zgxq.png"><br>
+		<span>中国象棋</span>-->
+	</div>
+	<table class="gametable">
+		<tr>
+			<td onClick="wuziqi()">
+				<img class="wzqimg" src="./img/wzq.png"><br>
+				<span>五子棋</span>
+			</td>
+			<td onClick="zgxq()">
+				<img class="zgxqimg" src="./img/zgxq.png"><br>
+				<span>中国象棋</span>
+			</td>
+		</tr>
+	</table>
+</div>
 </section>
 </body>
 </html>

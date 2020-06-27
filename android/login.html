@@ -5,23 +5,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 <style type="text/css">
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	background: url(./img/login_bg.jpg) no-repeat; 
+	background-size:450px 100%;
+}
+.loginCss{
+	margin-left:5px;
+	border:1px solid #54A532;
+	border-redius: 10px;
+}
+.registercss{
+	border:1px solid #54A532;
+	margin-left:60px;
+}
+.formCss{
+	position: absolute;
+    left: calc((100% - 231px)/2);
+}
+.formCss input{
+	height:25px;
+	margin-top:5px;
+}
+.formCss button{
+    font-size: 17px;
+    background-color: #54A532;
+    color: #fff;
+	
+	display: inline-block;
+    width: 80px;
+    height: 32px;
+    cursor: pointer;
+    line-height: 32px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #54a532;
+    font-family: 'Microsoft YaHei'
+}
+.jzmmCss{
+	display: block;
+    position: relative;
+    margin-top: 15px;
+}
+.otherlogin{
+	left: calc((100% - 108px)/2);
+	position: absolute;
+	 text-align:center;
+	 top:400px; 
+}
+.bottonCss{
+	margin-top:10px;
+}
+.bottonCss img{
+	width:60px;
+	height:50px;
+}
 </style>
 <script type="text/javascript">
 	window.login=function(){
-		if(window.native){
+		/*if(window.native){
 			native.goHome();
-		}
+		}*/
+		window.location.href="./home.html";
 	};
 </script>
 </head>
 <body>
-<section id="body" style="border:none;">
-<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;" onclick="dosomething()">欢迎来到欢乐谷</header>
-<section style="margin:0px auto;text-align:center;">
+<section id="body" style="border:none; width:100%; height:100%;">
+<header style="margin:1.3rem 0px 0.9rem;text-align:center;font-size:1rem;" onclick="dosomething()">欢乐谷</header>
+<section class="formCss">
 用户：<input type="text"><br>
 密码：<input type="password"><br>
-<button onclick="login()">登录</button>
+<label class="jzmmCss"> 
+<input style="width:20px; height:20px;" type="checkbox" name="remember" value="">
+<span style="color:#fff; vertical-align: top;">记住密码</span>
+</label>
+<span style="color:#fff; vertical-align: top; margin-left:153px;position: absolute;
+top: 87px;">忘记密码</span><br>
+<button class="loginCss" onClick="login()">登录</button>
+<button class="registercss" onClick="register()">注册</button>
 </section>
 </section>
+<div class="otherlogin">
+	<span>其他登录方式</span><br>
+	<div class="bottonCss">
+		<img style="" src="./img/weixin.png">
+	<!--<img style="" src="./img/QQ.png">-->
+	</div>
+</div>
 </body>
 </html>

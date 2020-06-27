@@ -1,0 +1,35 @@
+body{
+	background-image: url(../IMG/bg.jpg);
+}
+
+canvas
+{
+    display: block;
+    margin: 50px auto;
+    box-shadow: -2px -2px 2px #EFEFEF,5px 5px 5px #B9B9B9;
+	
+
+}
+div{
+    display: block;
+    margin: auto 46%;
+}
+button{
+
+	height: 50px;
+	width: 80px;
+    border-radius: 10px;
+    background-color: beige;
+}
+.btn{
+    margin-left: 50px;
+	position: absolute;
+	top:250px;
+	right: 400px;
+	
+}
+.btn .back{
+	display: block;
+	margin-bottom: 20px;
+
+}
